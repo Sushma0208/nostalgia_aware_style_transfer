@@ -1,0 +1,7 @@
+experiment:
+  name: preference_schema_smoke
+  seed: 17
+  split_unit: participant
+  feedback_budgets: [0, 2, 5, 10]
+  metrics: [pairwise_accuracy, held_out_log_loss]
+  note: "Protocol proposal only; no data or results exist yet."

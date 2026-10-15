@@ -1,0 +1,13 @@
+# Dataset card and audit state
+
+Pre-existing folders were found locally after the initial listing: `text_emotion_dataset/` and `image_emotion_dataset/test/`. They were inventoried but not integrated or used in an experiment. Counts and sizes below are filesystem observations and may reflect sync placeholders; provenance and rights need verification. No new data have been downloaded.
+
+| Dataset | Intended use | Structure / scale | Access, rights and decision |
+|---|---|---|---|
+| EmoSet | Visual emotion baseline and attribute analysis | 3.3M image collection; 118,102 labeled subset; train/val/test metadata and image/annotation directories; eight emotion labels and six visual attributes | Official repo documents structure and code MIT license; no inference that this covers photo rights. Exact download method, size, access terms and image-level rights not established in this audit. No download. [Official repo](https://github.com/JingyuanYY/EmoSet) |
+| AVA | Aesthetic score/distribution baseline | CVPR 2012, about 250k images and rating/tag metadata | Photographs remain copyrighted by photographers/DPChallenge; a third-party mirror reports ~30–32 GB but is not official. Do not acquire until terms and storage are checked. [Paper](https://refbase.cvc.uab.es/files/MMP2012a.pdf) |
+| GoEmotions | Optional text emotion baseline for user text only | Local folder includes three CSV shards, train/dev/test TSVs, analysis scripts and model card; upstream documents 58,009 Reddit comments, 27 emotions + neutral | Local presence verified, but provenance/version and local rights are not. Not image-caption data. Review model card and terms before use. [Official Google Research repo](https://github.com/google-research/google-research/tree/master/goemotions) |
+| Local image emotion subset (identity not established) | Potentially relevant image-emotion baseline, pending identification | `image_emotion_dataset/test/` has `angry`, `disgust`, `fear` folders. Repeated recursive inventory returned inconsistent counts and byte totals, consistent with a changing/synced directory view; no stable size is claimed. | Do not use until source, license, split semantics, label meaning and completeness are established. Labels do not match EmoSet's eight categories. |
+| Preference comparisons | Main proposed study data | Schema in source; no records currently | Requires approved protocol and consent. Identifiers should be pseudonymous; store contact/consent linkage separately; define retention, withdrawal and deletion. |
+
+For any future use, record exact source URL/version, retrieval date, license/terms snapshot, checksums, preprocessing, permitted uses, excluded items, split manifest and data statement. Keep raw data out of version control.

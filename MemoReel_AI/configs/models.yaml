@@ -1,0 +1,14 @@
+encoders:
+  image_text:
+    candidate: openai/clip-vit-base-patch32
+    trainable: false
+    status: proposed
+    license_check: required
+  visual_emotion:
+    candidate: null
+    status: defer until dataset and checkpoint licenses and compute are audited
+generation:
+  backend: mock
+  checkpoint: null
+  adapter: null
+  status: no model selected; compatibility and license checks required
